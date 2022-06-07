@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQl-Ic-VBD">
+                                <rect key="frame" x="91.5" y="402" width="231" height="102"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sos24_img" translatesAutoresizingMaskIntoConstraints="NO" id="dFa-jP-pI2">
+                                        <rect key="frame" x="22" y="0.0" width="187" height="99.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dFa-jP-pI2" secondAttribute="height" multiplier="15:8" id="THZ-30-7qZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="СЛУЖБА ОПЕРАТИВНОГО СЕРВИСА" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJX-wf-P8d">
+                                        <rect key="frame" x="20" y="89.5" width="191" height="12.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xJX-wf-P8d" secondAttribute="trailing" constant="20" id="8xl-K8-pOC"/>
+                                    <constraint firstItem="dFa-jP-pI2" firstAttribute="top" secondItem="BQl-Ic-VBD" secondAttribute="top" id="DDP-8F-8U6"/>
+                                    <constraint firstItem="xJX-wf-P8d" firstAttribute="leading" secondItem="BQl-Ic-VBD" secondAttribute="leading" constant="20" id="FiC-rs-i6j"/>
+                                    <constraint firstAttribute="bottom" secondItem="xJX-wf-P8d" secondAttribute="bottom" id="TUp-eg-1jq"/>
+                                    <constraint firstItem="xJX-wf-P8d" firstAttribute="top" secondItem="dFa-jP-pI2" secondAttribute="bottom" constant="-10" id="b9V-2g-IWf"/>
+                                    <constraint firstItem="dFa-jP-pI2" firstAttribute="centerX" secondItem="BQl-Ic-VBD" secondAttribute="centerX" id="rBf-gZ-c87"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BQl-Ic-VBD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HLf-Zj-jLz"/>
+                            <constraint firstItem="BQl-Ic-VBD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W1W-7v-UA4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sos24_img" width="187" height="45"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

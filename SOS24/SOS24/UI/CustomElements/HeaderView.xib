@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="SOS24" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="HeaderVIew"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="callButton" destination="id5-Le-Wfj" id="844-gk-BZv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 800 209 209" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esi-Nf-eQ2">
+                    <rect key="frame" x="156" y="151" width="102.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                    <color key="textColor" name="themeOrange"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="СЛУЖБА ОПЕРАТИВНОГО СЕРВИСА" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpe-Uf-5lu">
+                    <rect key="frame" x="149" y="108.5" width="116" height="7.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="6"/>
+                    <color key="textColor" name="themeBlack"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sos24_img" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-et-PPZ">
+                    <rect key="frame" x="153" y="61" width="108" height="57.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AUl-et-PPZ" secondAttribute="height" multiplier="15:8" id="iRN-jM-NJY"/>
+                        <constraint firstAttribute="width" constant="108" id="rkX-32-lA8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id5-Le-Wfj">
+                    <rect key="frame" x="15" y="180" width="384" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qRf-z3-F41"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Позвонить">
+                        <color key="titleColor" name="themeOrange"/>
+                    </state>
+                    <connections>
+                        <action selector="callButtonDidTap" destination="-1" eventType="touchUpInside" id="YUL-H4-ok4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Круглосуточная горячая линия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpO-0r-V2K">
+                    <rect key="frame" x="104.5" y="126.5" width="205" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" name="themeBlack"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Звонок бесплатный" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoJ-es-rAC">
+                    <rect key="frame" x="160.5" y="240" width="93" height="12"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="10"/>
+                    <color key="textColor" name="themeBlack"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="esi-Nf-eQ2" firstAttribute="top" secondItem="YpO-0r-V2K" secondAttribute="bottom" constant="8" id="5MI-lo-bY6"/>
+                <constraint firstItem="Fpe-Uf-5lu" firstAttribute="centerX" secondItem="AUl-et-PPZ" secondAttribute="centerX" id="9eS-Hr-mrK"/>
+                <constraint firstItem="YpO-0r-V2K" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BNZ-8G-kFW"/>
+                <constraint firstItem="AUl-et-PPZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Cre-fz-kgf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="id5-Le-Wfj" secondAttribute="trailing" constant="15" id="F2o-Z3-eMv"/>
+                <constraint firstItem="LoJ-es-rAC" firstAttribute="top" secondItem="id5-Le-Wfj" secondAttribute="bottom" constant="10" id="aVZ-5n-Sit"/>
+                <constraint firstItem="LoJ-es-rAC" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="b9a-Jq-8I0"/>
+                <constraint firstItem="AUl-et-PPZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="17" id="dQM-eB-Cks"/>
+                <constraint firstItem="id5-Le-Wfj" firstAttribute="top" secondItem="esi-Nf-eQ2" secondAttribute="bottom" constant="10" id="fba-1g-Fnv"/>
+                <constraint firstItem="YpO-0r-V2K" firstAttribute="top" secondItem="AUl-et-PPZ" secondAttribute="bottom" constant="8" id="gn5-ta-u8T"/>
+                <constraint firstItem="id5-Le-Wfj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="iZC-3j-p6a"/>
+                <constraint firstItem="esi-Nf-eQ2" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="q3J-ac-pWp"/>
+                <constraint firstItem="Fpe-Uf-5lu" firstAttribute="top" secondItem="AUl-et-PPZ" secondAttribute="bottom" constant="-10" id="ukr-EO-xzI"/>
+            </constraints>
+            <point key="canvasLocation" x="-210" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sos24_img" width="187" height="45"/>
+        <namedColor name="themeBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeOrange">
+            <color red="1" green="0.4823529411764706" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
